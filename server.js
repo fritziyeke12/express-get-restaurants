@@ -3,12 +3,12 @@ const app = express();
 const {Restaurant} = require("./models/index")
 const {sequelize} = require("./db");
 
-const port = 3001;
+const port = 3002;
 
 //TODO: Create your GET Request Route Below: 
 app.get("/restaurants", async (req, res) => {
     const ret = await Restaurant.findAll();
-    res.send(ret);
+    res.json(ret);
 })
 
 
