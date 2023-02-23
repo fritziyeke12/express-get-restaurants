@@ -6,7 +6,7 @@
   "scripts": {
     "seed": "node seed.js",
     "test": "jest --watch",
-    "start": "nodemon server.js"
+    "start": "nodemon ./server.js"
   },
   "keywords": [],
   "author": "",
